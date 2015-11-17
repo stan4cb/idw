@@ -52,7 +52,7 @@ crawler url =
           downloadNSaveImage $ Imgur.findImage html
 
 
--- there is no control if its a image
+-- need folder save
 downloadNSaveImage url = do
   if not $ isHotlink url
   then putStrLn ("Found url is not valid : " ++ url)
